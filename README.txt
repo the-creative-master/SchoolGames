@@ -1,6 +1,6 @@
 SCHOOLGAMES — GITHUB PAGES
 
-In repository Settings > Pages, select Deploy from a branch, choose main and / (root), then save. GitHub Pages deploys the static arcade after this PR is merged.
+In repository Settings > Pages, select Deploy from a branch, choose main and / (root), then save. The root .nojekyll file tells GitHub Pages to deploy the static files directly without running Jekyll. If a Pages deployment ever times out at syncing_files, merge or push a new commit to main rather than re-running the failed workflow job so GitHub Pages assigns a fresh deployment ID.
 
 OFFLINE USE
 After deploying, open the site online and click Save for offline. Wait for all files to save, then bookmark the page. You can reopen it offline in the same browser. Some games may still call external services. Storage quotas, eviction, or clearing browser data can remove cached files. If you saved an older SchoolGames version offline, save it again after updating. HTTPS or localhost is required.
